@@ -1,0 +1,63 @@
+body{
+	background-color: darkgrey;
+}
+.circle{
+	margin: 70px auto;
+	width: 40px;
+	height: 40px;
+	border: 5px solid rgb(241, 97, 97);
+	border-radius: 50%;
+	border-top-color: #fff;
+	animation: spin 1s linear infinite;
+}
+@Keyframes spin{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.container{
+	width: 40px;
+	margin: 70px auto;
+}
+.dot{
+	width: 10px;
+	height: 10px;	
+	display: inline-block;
+	border-radius: 50%;
+	
+}
+.d1{
+	background-color:orangered;
+	animation: jump-up 0.6s 0.1s linear infinite;
+}
+.d2{
+	background-color: #f3f737;
+	animation: jump-up 0.6s 0.2s linear infinite;
+}
+.d3{
+	background-color: #4c12aa;
+	animation: jump-up 0.6s 0.3s linear infinite;
+}
+
+@Keyframes jump-up{
+	50%{
+		transform: translate(0,15px);
+	}
+}
+
+.box{
+	width: 15px;
+	height: 15px;
+	background-color: #008cbc;
+	display: inline-block;
+	animation: pulse 0.6s ease-in infinite alternate;
+}
+.box2, .box3{
+	animation-delay: 0.6s;
+}
+
+@Keyframes pulse{
+	100%{
+		opacity: 0;
+	}
+}
